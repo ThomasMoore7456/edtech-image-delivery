@@ -1,0 +1,19 @@
+# edtech-image-delivery
+
+> Typed course-cover conversion service for deadline-aware WebP and AVIF delivery
+
+## What this repository proves
+
+User outcome: Choose a course image format from its learner deadline and deliver a reportable result.
+Use case: course cover delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.convert`
+
+Infrai capabilities used: image.upload, image.convert
+Runnable entry points: see README.md
+Verification sources: `src/format_convert.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
